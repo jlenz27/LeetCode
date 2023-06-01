@@ -23,3 +23,16 @@ var createCounter = function(init) {
     return counter
 };
 
+var createCounter = function(init) {
+    let counter = init;
+    let resetVal = init;
+
+    let obj = {
+        increment : () => ++counter,
+        decrement : () => --counter,
+        reset : () => counter = resetVal
+    }
+
+    return obj;
+};
+
