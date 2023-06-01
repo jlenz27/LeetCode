@@ -1,10 +1,12 @@
 // A function that contains 3 fuctions to increment, decrement, or reset a number based on input
-/**
- * const counter = createCounter(5)
- * counter.increment(); // 6
- * counter.reset(); // 5
- * counter.decrement(); // 4
- */
+
+// Input: init = 5, calls = ["increment","reset","decrement"]
+// Output: [6,5,4]
+// Explanation:
+// const counter = createCounter(5);
+// counter.increment(); // 6
+// counter.reset(); // 5
+// counter.decrement(); // 4
 
 var createCounter = function(init) {
     let cur = init;
