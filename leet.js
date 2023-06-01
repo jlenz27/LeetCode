@@ -52,7 +52,7 @@ var map = function(arr, fn) {
     return emptyArr
 };
 
-//use less memory however changes the input array
+//use less memory however changes the input array 
 var map = function(arr, fn) {
     var n = arr.length;
     for(var i = 0; i < n; i++){
