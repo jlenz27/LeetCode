@@ -67,3 +67,8 @@ var map = function(arr, fn) {
 var map = function(arr, fn) {
     return arr.map(fn);
 };
+
+
+// Given an integer array arr and a filtering function fn, return a new array with a fewer or equal number of elements.
+
+// The returned array should only contain elements where fn(arr[i], i) evaluated to a truthy value.
