@@ -63,7 +63,7 @@ var map = function(arr, fn) {
     return arr;
 };
 
-//Uses map to complete the same calculations
+//Uses map to complete the same calculation
 var map = function(arr, fn) {
     return arr.map(fn);
 };
