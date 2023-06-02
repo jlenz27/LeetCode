@@ -77,3 +77,13 @@ var map = function(arr, fn) {
 // Explanation:
 // const newArray = filter(arr, fn); // [20, 30]
 // The function filters out values that are not greater than 10
+
+var filter = function(arr, fn) {
+    const newArr = [];
+    for(let i =0; i < arr.length; i++){
+        if(fn(arr[i], i)){
+        newArr.push(arr[i])
+    }
+    }
+    return newArr
+};
