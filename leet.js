@@ -87,3 +87,8 @@ var filter = function(arr, fn) {
     }
     return newArr
 };
+
+var filter = function(arr, fn) {
+    return arr.filter((x,i)=>fn(x,i));
+    
+};
