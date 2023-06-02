@@ -108,3 +108,12 @@ var filter = function(arr, fn) {
 // (3) + nums[2] = 6
 // (6) + nums[3] = 10
 // The final answer is 10.
+
+var reduce = function(nums, fn, init) {
+    let val = init;
+    for(let i =0; i < nums.length; i++){
+        val = (fn(val, nums[i]))
+
+    }
+    return val
+};
