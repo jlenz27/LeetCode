@@ -150,3 +150,7 @@ var argumentsLength = function(...args) {
     }
     return counter
 };
+
+var argumentsLength = function(...args) { //return without loop to use less memory
+    return args.length;
+  };
