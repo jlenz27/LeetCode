@@ -143,3 +143,10 @@ var reduce = function (nums, fn, init) {
 // Explanation:
 // argumentsLength(5); // 1
 
+var argumentsLength = function(...args) {
+    let counter = 0;
+    for(let i =0; i <args.length; i++){
+        counter++
+    }
+    return counter
+};
