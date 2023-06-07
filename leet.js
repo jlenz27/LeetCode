@@ -200,3 +200,17 @@ var countMatches = function(items, ruleKey, ruleValue) {
 // Explanation: The array ans is formed as follows:
 // - ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]
 // - ans = [1,2,1,1,2,1]
+
+var getConcatenation = function(nums) {
+    let ans = [];
+    for(let i = 0; i < nums.length; i++){
+        ans.push(nums[i])
+ 
+        
+    }
+     for(let i = 0; i < nums.length; i++){
+        ans.push(nums[i])
+        
+    }
+    return ans
+};
