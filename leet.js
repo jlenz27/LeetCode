@@ -181,3 +181,7 @@ var countMatches = function(items, ruleKey, ruleValue) {
     return count;
   
   };
+
+//   The code then checks if the item matches the given rule based on the ruleKey and ruleValue parameters. If ruleKey is "type" and the type of the current item is equal to ruleValue, or if ruleKey is "color" and the color of the current item is equal to ruleValue, or if ruleKey is "name" and the name of the current item is equal to ruleValue, then the count is incremented by 1.
+
+
