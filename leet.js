@@ -162,3 +162,22 @@ var argumentsLength = function(...args) { //return without loop to use less memo
 // ruleKey == "type" and ruleValue == typei.
 // ruleKey == "color" and ruleValue == colori.
 // ruleKey == "name" and ruleValue == namei.
+
+var countMatches = function(items, ruleKey, ruleValue) {
+    let count = 0;
+  
+    for (let i = 0; i < items.length; i++) {
+      const [type, color, name] = items[i];
+  
+      if (
+        (ruleKey === "type" && type === ruleValue) ||
+        (ruleKey === "color" && color === ruleValue) ||
+        (ruleKey === "name" && name === ruleValue)
+      ) {
+        count++;
+      }
+    }
+  
+    return count;
+  
+  };
