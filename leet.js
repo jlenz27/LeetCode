@@ -238,3 +238,18 @@ var shuffle = function (nums, n) {
 
     return arr
 };
+
+var shuffle = function(nums, n) {
+    const arr1 = nums.slice(0, n).reverse();
+    const arr2 = nums.slice(n).reverse();
+
+    for( let i=0; i< nums.length; i++ ) {
+        if( i%2 === 0 ) {
+            nums[i] = arr1.pop()
+        } else {
+            nums[i] = arr2.pop()
+        }
+    }
+
+    return nums;
+};
