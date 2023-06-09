@@ -274,3 +274,11 @@ var sortSentence = function (s) {
   
     return result.join(' '); // Join the words in the result array into a string
   };
+
+  var sortSentence = function(s) {
+    s = s.split(" ").sort((a,b) => {
+        return a[a.length-1] - b[b.length-1]
+    })
+
+    return s.join(" ").replaceAll(/[0-9]/g, "")
+};
