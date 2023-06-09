@@ -238,7 +238,7 @@ var shuffle = function (nums, n) {
 
     return arr
 };
-
+//better time and memory 
 var shuffle = function(nums, n) {
     const arr1 = nums.slice(0, n).reverse();
     const arr2 = nums.slice(n).reverse();
@@ -253,3 +253,6 @@ var shuffle = function(nums, n) {
 
     return nums;
 };
+
+// A sentence is a list of words that are separated by a single space with no leading or trailing spaces. Each word consists of lowercase and uppercase English letters.
+// A sentence can be shuffled by appending the 1-indexed word position to each word then rearranging the words in the sentence.
