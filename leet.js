@@ -424,3 +424,11 @@ var smallerNumbersThanCurrent = function (nums) {
 
 // The 1st call is cancelled by the 2nd call because the 2nd call occurred before 100ms
 // The 2nd call is delayed by 50ms and executed at 125ms. The inputs were (2).
+
+var debounce = function(fn, t) {
+    let id;
+    return function(...args) {
+       clearTimeout(id);
+       id = setTimeout(()=> fn(...args), t)
+    }
+};
