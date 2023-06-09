@@ -304,3 +304,8 @@ var arrayStringsAreEqual = function(word1, word2) {
           return false
       }   
 };
+
+var arrayStringsAreEqual = function(word1, word2) { //A one line solution to the above one
+    return word1.join('')===word2.join('')  
+
+};
