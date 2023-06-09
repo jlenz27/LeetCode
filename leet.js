@@ -444,3 +444,13 @@ var debounce = function(fn, t) {
 // The words in s are ["Hello", "how" "are", "you", "Contestant"].
 // The first 4 words are ["Hello", "how", "are", "you"].
 // Hence, you should return "Hello how are you".
+
+var truncateSentence = function(s, k) {
+    let an = s.split(' ')
+    let ne = [];
+    for(let i = 0; i < k; i++){
+        ne.push(an[i])
+       
+    }
+    return ne.join(" ")
+ };
