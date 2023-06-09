@@ -261,3 +261,16 @@ var shuffle = function(nums, n) {
 // Output: "This is a sentence"
 // Explanation: Sort the words in s to their original positions "This1 is2 a3 sentence4", then remove the numbers.
 
+var sortSentence = function (s) {
+    const words = s.split(' ');
+    const result = new Array(words.length);
+  
+    for (let i = 0; i < words.length; i++) {
+      const word = words[i];
+      const originalWord = word.slice(0, -1); // Remove the last character (word position)
+      const position = parseInt(word[word.length - 1]); // Extract the word position as an integer
+      result[position - 1] = originalWord; // Place the original word at the correct index in the result array
+    }
+  
+    return result.join(' '); // Join the words in the result array into a string
+  };
