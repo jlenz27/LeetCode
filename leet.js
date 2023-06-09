@@ -362,3 +362,15 @@ var smallestEvenMultiple = function(n) {
 // Product of digits = 2 * 3 * 4 = 24 
 // Sum of digits = 2 + 3 + 4 = 9 
 // Result = 24 - 9 = 15
+
+var subtractProductAndSum = function (n) {
+    const ne = n.toString();
+    let sum = 0;
+    let prod = 1;
+    for (let i = 0; i < ne.length; i++) {
+        sum += parseInt(ne.charAt(i));
+        prod *= parseInt(ne.charAt(i));
+
+    }
+    return prod - sum
+};
