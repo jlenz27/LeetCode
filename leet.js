@@ -294,3 +294,13 @@ var sortSentence = function (s) {
 // word1 represents string "ab" + "c" -> "abc"
 // word2 represents string "a" + "bc" -> "abc"
 // The strings are the same, so return true.
+
+var arrayStringsAreEqual = function(word1, word2) {
+    let temp = word1.join('')
+    let temp1 = word2.join('')
+      if(temp === temp1){
+          return true
+      }else{
+          return false
+      }   
+};
