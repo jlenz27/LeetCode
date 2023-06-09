@@ -462,4 +462,12 @@ var truncateSentence = function(s, k) {
 // Output: true
 // Explanation: sentence contains at least one of every letter of the English alphabet.
 
- 
+var checkIfPangram = function(sentence) {
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+   for (let i = 0; i < alphabet.length; i++) {
+     if (sentence.indexOf(alphabet[i]) === -1) {
+       return false;
+     }
+   }
+   return true;
+ };
