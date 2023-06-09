@@ -428,7 +428,7 @@ var smallerNumbersThanCurrent = function (nums) {
 var debounce = function(fn, t) {
     let id;
     return function(...args) {
-       clearTimeout(id);
-       id = setTimeout(()=> fn(...args), t)
+       clearTimeout(id);//clears the call before the timeout with the id of call
+       id = setTimeout(()=> fn(...args), t)// set timeout empty fuction of teo arguments
     }
 };
